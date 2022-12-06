@@ -2,16 +2,25 @@ package address_book;
 
 
 	public class Entry {
-		private String name;
+		private String firstName;
+		private String lastName;
 	    private String address;
 	    private String phoneNumber;
 	    
-	 public void setName(String privateName) {
-		 name = privateName;
+	 public void setName(String privateFirstName) {
+		 firstName = privateFirstName;
 	 }
 	 
-	 public String getName() {
-		 return name;
+	 public String getFirstName() {
+		 return firstName;
+	 }
+	 
+	 public void setLastName(String privateLastName) {
+		 firstName = lastName;
+	 }
+	 
+	 public String getlastName() {
+		 return lastName;
 	 }
 	 
 	 public void setAddress(String privateAddress) {
@@ -30,8 +39,8 @@ package address_book;
 		 return phoneNumber;
 	 }
 	 
-	 public Entry (String name, String address, String phoneNumber ) {
-		 this.name = name;
+	 public Entry (String firstName, String lastName, String address, String phoneNumber ) {
+		 this.firstName = name;
 		 this.address = address;
 		 this.phoneNumber = phoneNumber;
 	 }
