@@ -19,13 +19,20 @@ public class AddressBook {
 	}
 	
 	// Remove an Entry from the AddressBook
-	public void removeEntry() {
-		
+	public void removeEntry(String name) {
+		for(int i= 0;i< colleagues.size(); i++) {
+			if(colleagues.get(i).getFirstName().equals(name) || colleagues.get(i).getlastName().equals(name)) 
+				colleagues.remove(i);
+		}
 	}
 	
 	//Search for a colleague information
-	public void searchEntry() {
-		
+	public void searchEntry(String name) {
+		for(int i= 0;i< colleagues.size(); i++) {
+			
+			if(colleagues.get(i).getFirstName().equals(name) || colleagues.get(i).getlastName().equals(name)) 
+				System.out.println(colleagues.get(i));
+		}
 	}
 	
 	//Print the entries 
