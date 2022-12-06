@@ -7,12 +7,6 @@ public class Main {
 
 	public static void main(String[] args) {
 
-	    System.out.println("***PROGRAM INFORMATION*** \nNAME" +
-	            "->  IS THE NAME OF THE PERSON IN THE ADDRESSBOOK \nADDRESS" +
-	            "->  THE ADDRESS OF THE PERSON \nMOBILE NUMBER" +
-	            "->  THE MOBILE NUMBER OF THE PERSON \nEMAIL ADDRESS" +
-	            "->  THE EMAIL ADDRESS OF THE PERSON\n");
-
 	    String input;
 	    Scanner in = new Scanner(System.in);
 
