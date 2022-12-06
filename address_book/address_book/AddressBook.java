@@ -42,5 +42,24 @@ public class AddressBook {
 	public void quitProgram() {
 		
 	}
+
+	public void add(Entry entry) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void delete(String next) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Entry[] viewAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+		
+	}
 	
-}
+
