@@ -40,7 +40,8 @@ package address_book;
 	 }
 	 
 	 public Entry (String firstName, String lastName, String address, String phoneNumber ) {
-		 this.firstName = name;
+		 this.firstName = firstName;
+		 this.lastName = lastName;
 		 this.address = address;
 		 this.phoneNumber = phoneNumber;
 	 }
