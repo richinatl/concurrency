@@ -29,4 +29,10 @@ package address_book;
 	 public String getPhoneNumber(String privatePhoneNumber) {
 		 return phoneNumber;
 	 }
+	 
+	 public Entry (String name, String address, String phoneNumber ) {
+		 this.name = name;
+		 this.address = address;
+		 this.phoneNumber = phoneNumber;
+	 }
 }
