@@ -16,7 +16,7 @@ package address_book;
 	 }
 	 
 	 public void setLastName(String privateLastName) {
-		 firstName = lastName;
+		 firstName = privateLastName;
 	 }
 	 
 	 public String getlastName() {
