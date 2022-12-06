@@ -7,7 +7,7 @@ package address_book;
 	    private String address;
 	    private String phoneNumber;
 	    
-	 public void setName(String privateFirstName) {
+	 public void setFirstName(String privateFirstName) {
 		 firstName = privateFirstName;
 	 }
 	 
