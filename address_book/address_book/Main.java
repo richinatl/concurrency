@@ -89,12 +89,19 @@ public class Main {
 			System.out.println("\nThe address book is clear");
 			}
 			
+<<<<<<< HEAD
 			// Quit 
 			else if (choice == 6) {
 				
 			}
 			
 			menu1();
+=======
+			else if(choice == 6) {System.out.println("BYE");
+			vipBook.quitProgram();
+						}
+			menu();
+>>>>>>> branch 'main' of https://github.com/JamesLyfe/TTSJavaProject.git
 			choice = scanner.nextInt();
 			}
 		}
