@@ -39,6 +39,17 @@ package address_book;
 		 return phoneNumber;
 	 }
 	 
+	 @Override
+	 public String toString() {
+			System.out.println("=====================================================");
+		 return "First Name:" +this.firstName +  "\nLast Name:" +this.lastName + "\nPhone Number:" +this.phoneNumber + "\nEmail=" +this.address;
+		
+	 }
+	 
+//	 public String toString() {
+//		 return "firstName" +  "/n" + lastName + "/n" + address + "/n" + phoneNumber;
+//	 }
+//	 
 	 public Entry (String firstName, String lastName, String address, String phoneNumber ) {
 		 this.firstName = firstName;
 		 this.lastName = lastName;
