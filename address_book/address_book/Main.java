@@ -18,9 +18,10 @@ public class Main {
 	AddressBook vipBook = new AddressBook();
 	
 	// create menu for for the 5 choices
-	menu();
+	menu1();
 		int choice = scanner.nextInt();
 		while (choice!=5) {
+			
 			if(choice ==1) {
 			//Reads in all appropriate information.");
    		System.out.print("\nEnter your colleague\'s first name:");
@@ -48,33 +49,57 @@ public class Main {
 				
 				
 			}
-			else if(choice== 3) {
-				System.out.println("=====================================================");
-			System.out.println("1.First Name");
-			System.out.println("2.Last Name");
-			System.out.println("3.Phone Number");				
-			System.out.println("4.Email Adress");
-			System.out.println("\n=====================================================");
-			System.out.println("Chose a search type: ");
 			
-			System.out.print("Enter your search: ");
+			// Implement search
+			else if(choice== 3) {
+			 menu2();
+			 int option = scanner.nextInt();
+			 while(option!=4) {
+				
+			 
+			 if(option==1) {
+					 String firstname = scanner.next();
+					 vipBook.searchEntry(firstname);
+				 }
+				 else if(option==2) {
+					 String last = scanner.next();
+					 vipBook.searchEntry(last);
+				 }
+				 
+				 else if(option ==3) {
+					 String phone = scanner.next();
+					 vipBook.searchEntry(phone);
+				 }
+				 else if(option== 4) {
+					 String email = scanner.next();
+					 vipBook.searchEntry(email);
+				 }
+			 }
 			
 			}
+			
+			// print all the entries
 			else if(choice == 4) {
 				vipBook.printEntries();
 			}
 			
+			// clear the address book
 			else if(choice == 5) {
 				vipBook.deleteEntry();
 			System.out.println("\nThe address book is clear");
-			
 			}
-			menu();
+			
+			// Quit 
+			else if (choice == 6) {
+				
+			}
+			
+			menu1();
 			choice = scanner.nextInt();
 			}
 		}
 		    
-              public static void menu() {
+              public static void menu1() {
             	System.out.println("=====================================================");
 				System.out.println("1.Add an entry.");
 				System.out.println("2.Remove an entry");
@@ -86,6 +111,17 @@ public class Main {
 				System.out.print("Please choose what you'd like to do with the database: ");
 				
 }
+              public static void menu2() {
+            		System.out.println("=====================================================");
+        			System.out.println("1.First Name");
+        			System.out.println("2.Last Name");
+        			System.out.println("3.Phone Number");				
+        			System.out.println("4.Email Adress");
+        			System.out.println("\n=====================================================");
+        			System.out.println("Chose a search type: ");
+        			
+        			//System.out.print("Enter your search: ");
+              }
 
 
 //===============================================================================================================

@@ -27,7 +27,7 @@ public class AddressBook {
 	}
 	
 	//Search for a colleague information
-	private int searchEntry(String s) {
+	public int searchEntry(String s) {
 		for(int i= 0;i< colleagues.size(); i++) {
 			
 			if(colleagues.get(i).getFirstName().equals(s) || colleagues.get(i).getlastName().equals(s) || colleagues.get(i).getAddress().equals(s)||colleagues.get(i).getPhoneNumber(s).equals(s)) 
@@ -49,9 +49,9 @@ public class AddressBook {
 	// Clear the address book
 	public void deleteEntry() {
 	    for(int i=0; i<colleagues.size();i++)
-	        
-            System.out.print(colleagues.remove(i));
-    
+	        colleagues.clear();
+           // System.out.print(colleagues.remove(i));
+      
 	}
 	
 	// Quit the program
@@ -59,20 +59,20 @@ public class AddressBook {
 		
 	}
 
-	public void add(Entry entry) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void delete(String next) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public Entry[] viewAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+//	public void add(Entry entry) {
+//		// TODO Auto-generated method stub
+//		
+//	}
+//
+//	public void delete(String next) {
+//		// TODO Auto-generated method stub
+//		
+//	}
+//
+//	public Entry[] viewAll() {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
 
 
 		
