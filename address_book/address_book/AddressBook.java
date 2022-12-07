@@ -56,6 +56,7 @@ public class AddressBook {
 	
 	// Quit the program
 	public void quitProgram() {
+		System.exit(0);
 		
 	}
 

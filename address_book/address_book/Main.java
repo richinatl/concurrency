@@ -69,6 +69,10 @@ public class Main {
 			System.out.println("\nThe address book is clear");
 			
 			}
+			
+			else if(choice == 6) {System.out.println("BYE");
+			vipBook.quitProgram();
+						}
 			menu();
 			choice = scanner.nextInt();
 			}
