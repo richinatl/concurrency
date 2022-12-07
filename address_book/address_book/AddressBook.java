@@ -42,13 +42,15 @@ public class AddressBook {
 	public void printEntries() {
 		for (int i=0;i<colleagues.size();i++)
             System.out.println(colleagues.get(i));
+			
+
 	}
 	
-	// Delete an information
-	public void deleteEntry(String s) {
-	    int place = searchEntry(s);
-        if (place >= 0)
-            colleagues.remove(place);
+	// Clear the address book
+	public void deleteEntry() {
+	    for(int i=0; i<colleagues.size();i++)
+	        
+            System.out.print(colleagues.remove(i));
     
 	}
 	
